@@ -1,220 +1,262 @@
+/* Resetting default margin for the body */
 body {
-  margin: 0px;
+    margin: 0px;
 }
 
+/* Styling for the background section */
 .Background {
-  width: 100%;
-  height: 980px;
-  background: rgb(255, 255, 255);
-  background-image: url("v2_4.png");
-  opacity: 1;
-  margin-bottom: -20px;
-  margin-right: -100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
+    /* Setting the background properties */
+    width: 100%;
+    height: 980px;
+    background: rgb(255, 255, 255);
+    background-image: url("v2_4.png");
+    opacity: 1;
+    margin-bottom: -20px;
+    margin-right: -100px;
+    /* Flexbox settings for layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
+/* Styling for the contact bar */
 .Contact_bar {
-  width: 50%;
-  height: 600px;
-  background-color: rgba(255, 216, 79, 0.9);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border-radius: 50px;
-  border: 3px solid white;
-  padding: 10px;
-  margin-bottom: 90px;
-  font-family: "Roboto Condensed", sans-serif;
+    /* Setting width, height, and background color with transparency */
+    width: 50%;
+    height: 600px;
+    background-color: rgba(255, 216, 79, 0.9);
+    /* Flexbox settings for centering content */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Adding margin, border, padding, and font styling */
+    margin: auto;
+    border-radius: 50px;
+    border: 3px solid white;
+    padding: 10px;
+    margin-bottom: 90px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Styling for text with image */
 .text-with-image {
-  margin-bottom: 30px;
-  background-size: cover;
+    margin-bottom: 30px;
+    background-size: cover;
 }
 
 .text-with-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
+    /* Styling for images inside text-with-image */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
+/* Styling for headers */
 .Header {
-  margin-bottom: 500px;
-  font-size: 26px;
+    margin-bottom: 500px;
+    font-size: 26px;
 }
 
+/* Styling for the cart section */
 .Cart {
-  height: 600px;
-  margin-top: 200px;
-  margin-left: 70px;
-  font-family: "Roboto Condensed", sans-serif;
+    height: 600px;
+    margin-top: 200px;
+    margin-left: 70px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.Purchases {
-  max-width: 800px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Roboto Condensed", sans-serif;
+/* Styling for purchases and shop order box */
+.Purchases, .ShopOrderBox, .Cart {
+    /* Common styles for these sections */
+    max-width: 800px;
+    margin: auto;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.ShopOrderBox,
-.Cart {
-  width: 60%;
-  margin-bottom: 20px;
+/* Styling for shop order box and cart */
+.ShopOrderBox, .Cart {
+    width: 60%;
+    margin-bottom: 20px;
+    /* Background color, border radius, padding, and text alignment */
+    background-color: rgba(255, 216, 79, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.ShopOrderBox,
-.Cart {
-  background-color: rgba(255, 216, 79, 0.9);
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+/* Styling for headings within shop order box and cart */
+.ShopOrderBox h2, .Cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-.ShopOrderBox h2,
-.Cart h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
+/* Styling for paragraphs within shop order box */
 .ShopOrderBox p {
-  font-size: 16px;
-  margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.ShopButton,
-.CartItem {
-  background-color: lightgreen;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
+/* Styling for shop button and cart item */
+.ShopButton, .CartItem {
+    /* Styling for buttons with lightgreen background, padding, border radius, and margin */
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
+/* Styling for item image within cart item */
 .ItemImage {
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
+/* Styling for item details within cart item */
 .ItemDetails {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
+/* Styling for paragraph within cart item */
 .CartItem p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
+/* Styling for cart total */
 .CartTotal {
-  font-weight: bold;
+    font-weight: bold;
 }
 
+/* Styling for discount input field */
 #discount {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  outline: none;
-  transition: border-color 0.3s;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    /* Box styling with border, border radius, and transition effect */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
 #discount:focus {
-  border-color: #3498db;
+    /* Styling for focused state of the discount input */
+    border-color: #3498db;
 }
 
+/* Styling for cash-out button */
 .CashOutButton {
-  background-color: #3498db;
-  color: #fff;
-  padding: 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-size: 18px;
+    /* Button styling with background color, text color, padding, border radius, and cursor */
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
 }
 
 .CashOutButton:hover {
-  background-color: #2980b9;
+    /* Styling for hover state of the cash-out button */
+    background-color: #2980b9;
 }
 
+/* Styling for menu section */
 .Menu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  margin-top: 100px;
+    /* Grid styling with three columns, gap, max width, margin, and padding */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    margin-top: 100px;
 }
 
+/* Styling for menu items */
 .MenuItem {
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgba(255, 216, 79, 0.9);
+    /* Text alignment, border, border radius, padding, and background color with transparency */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 216, 79, 0.9);
 }
 
+/* Styling for images within menu items */
 .MenuItem img {
-  width: 100%;
-  max-height: 50px;
-  object-fit: cover;
-  border-radius: 8px;
+    /* Image styling with width, max height, object fit, and border radius */
+    width: 100%;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 
 }
 
+/* Styling för bilder inuti menyobjekt */
+.MenuItem img {
+    /* Bildstyling med bredd, maxhöjd, objektfyllnad och kantlinjeradius */
+    width: 100%;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Styling för titel inuti menyobjekt */
 .ItemTitle {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
 }
 
+/* Hover-effekt för menyobjekt */
 .MenuItem:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
+/* Förklarande text som visas vid hover-effekt på menyobjekt */
 .MenuItem:hover::before {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
+/* Visa förklarande text vid hover-effekt på menyobjekt */
 .MenuItem:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
 
+/* Styling för bilder inuti menyobjekt */
 .MenuItem img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
+/* Lägg till korgen-text för menyobjekt */
 .AddToBasket {
-  font-size: 20px;
+    font-size: 20px;
 }
 
+/* Formulärstilar */
 form {
   max-width: 400px;
   margin: auto;
@@ -225,12 +267,14 @@ form {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+/* Stilar för etiketter */
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
+/* Stilar för textrutor */
 textarea {
   width: 100%;
   padding: 10px;
@@ -244,6 +288,7 @@ textarea {
   resize: vertical;
 }
 
+/* Stilar för skicka-knappen */
 .skicka {
   background-color: lightgreen;
   color: #fff;
@@ -253,6 +298,7 @@ textarea {
   cursor: pointer;
 }
 
+/* Stilar för återställ-knappen */
 .omstall {
   background-color: red;
   color: #fff;
@@ -263,6 +309,7 @@ textarea {
   cursor: pointer;
 }
 
+/* Hover-effekter för skicka- och återställ-knappar */
 .skicka:hover {
   background-color: green;
 }
@@ -271,6 +318,7 @@ textarea {
   background-color: darkred;
 }
 
+/* Stilar för logotyp */
 .Logo {
   width: 210px;
   height: 200px;
@@ -282,6 +330,7 @@ textarea {
   margin-top: 80px;
 }
 
+/* Stilar för navigeringsfältet */
 .nav_bar {
   width: 100%;
   height: 80px;
@@ -294,6 +343,7 @@ textarea {
   justify-content: right;
 }
 
+/* Stilar för navigationspunkter */
 .Item {
   display: flex;
   color: black;
@@ -302,11 +352,15 @@ textarea {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-a:hover, a:focus, a:active {
+/* Hover-effekt för länkar */
+a:hover,
+a:focus,
+a:active {
   color: #e6dbdb;
   text-decoration: none;
 }
 
+/* Stilar för navigationslänkar */
 a:not(.Logo) {
   position: relative;
   font-size: 20px;
@@ -316,6 +370,8 @@ a:not(.Logo) {
   padding: 15px 18px;
   text-decoration: none;
 }
+
+/* Understreckeffekt för länkar */
 a:not(.Logo)::before {
   content: "";
   display: block;
@@ -329,14 +385,20 @@ a:not(.Logo)::before {
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
 }
+
+/* Aktiverad understreckeffekt */
 a:not(.Logo):active::before {
   background-color: #000;
 }
-a:not(.Logo):hover::before, a:not(.Logo):focus::before {
+
+/* Hover-effekt för understreck */
+a:not(.Logo):hover::before,
+a:not(.Logo):focus::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
 
+/* Stilar för grabber-bilden */
 .Grabber {
   width: 418px;
   height: 240px;
@@ -351,6 +413,7 @@ a:not(.Logo):hover::before, a:not(.Logo):focus::before {
   overflow: hidden;
 }
 
+/* Stilar för stor order */
 .Big_Order {
   width: 306px;
   height: 77px;
@@ -365,6 +428,7 @@ a:not(.Logo):hover::before, a:not(.Logo):focus::before {
   cursor: pointer;
 }
 
+/* Stilar för texten inuti stor order */
 .Big_Order_Text {
   width: 120px;
   color: black;
@@ -379,6 +443,7 @@ a:not(.Logo):hover::before, a:not(.Logo):focus::before {
   cursor: pointer;
 }
 
+/* Stilar för lång slogan */
 .Slogan_Long {
   width: 306px;
   color: black;
@@ -392,6 +457,7 @@ a:not(.Logo):hover::before, a:not(.Logo):focus::before {
   left: 0px;
 }
 
+/* Stilar för slogan */
 .Slogan {
   width: 418px;
   color: black;
@@ -405,6 +471,7 @@ a:not(.Logo):hover::before, a:not(.Logo):focus::before {
   left: 0px;
 }
 
+/* Stilar för sidfoten */
 footer {
   height: 150px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -415,8 +482,10 @@ footer {
   font-size: 20px;
 }
 
+/* Responsiva stilar för navigeringsfältet */
 @media (max-width: 350px) {
   .nav_bar {
     flex-direction: column;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
