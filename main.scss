@@ -1,10 +1,13 @@
+// Variabler för textfärg och navigationshöjd
 $text_color: black;
 $nav_height: 80px; 
 
+// Stilar för body-elementet
 body {
   margin: 0px;
 }
 
+// Stilar för bakgrundssektionen
 .Background {
   width: 100%;
   height: 980px;
@@ -18,6 +21,7 @@ body {
   justify-content: left;
 }
 
+// Stilar för kontaktlisten
 .Contact_bar{
   width: 50%;
   height: 600px;
@@ -34,6 +38,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+// Stilar för text med bild
 .text-with-image {
   margin-bottom: 30px;
   background-size: cover;
@@ -46,11 +51,13 @@ body {
   margin-bottom: 10px;
 }
 
+// Stilar för rubriker
 .Header{
   margin-bottom: 500px;
   font-size: 26px;
 }
 
+// Stilar för kundvagnssektionen
 .Cart{
   height: 600px;
   margin-top: 200px;
@@ -58,6 +65,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+// Stilar för köp och butiksorderruta
 .Purchases {
   max-width: 800px;
   margin: auto;
@@ -154,6 +162,7 @@ body {
   background-color: #2980b9;
 }
 
+// Stilar för menysektionen
 .Menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,6 +173,7 @@ body {
   margin-top: 100px;
 }
 
+// Stilar för menyobjekt
 .MenuItem {
   text-align: center;
   border: 1px solid #ccc;
@@ -172,6 +182,7 @@ body {
   background-color: rgba(255, 216, 79, 0.9);
 }
 
+// Stilar för bilder inuti menyobjekt
 .MenuItem img {
   width: 100%;
   max-height: 50px;
@@ -185,247 +196,265 @@ body {
   margin-bottom: 10px;
 }
 
+// Hover-effekt för menyobjekt
 .MenuItem:hover {
   transform: scale(1.05);
 }
 
+// Hover-effekt för att visa tooltip före menyobjektet
 .MenuItem:hover::before {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.MenuItem:hover::before {
-  opacity: 1;
-}
-
-.MenuItem img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.AddToBasket {
-  font-size: 20px;
-}
-form {
-        max-width: 400px;
-        margin: auto;
-        background-color: rgba(252, 207, 44, 0.9);
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    .skicka {
-        background-color: lightgreen;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .omstall{
-      background-color: red;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      margin-left: 80px;
-      cursor: pointer;
-    }
-
-    .skicka:hover {
-        background-color: green;
-    }
-
-    .omstall:hover{
-      background-color: darkred;
-    }
-    
-
-
-.Logo {
-  width: 210px;
-  height: 200px;
-  background-image: url("v112_31.png");
-  background-size: cover;
-  opacity: 1;
-  border-radius: 25px;
-  margin-left: 100px;
-  margin-top: 80px;
-}
-
-.nav_bar {
-  width: 100%;
-  height: $nav_height;
-  background-color: rgba($color: #000000, $alpha: 0.07);
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
-.Item {
-  display: flex;
-  color: $text_color;
-  font-size: 21px; 
-  margin-left: 50px;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-a:hover, a:focus, a:active {
-  color: #e6dbdb;
-  text-decoration: none;
-}
-
-a:not(.Logo) {
-  position: relative;
-  font-size: 20px;
-  cursor: pointer;
-  color: $text_color;
-  text-align: center;
-  padding: 15px 18px;
-  text-decoration: none;
-
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    height: 3px;
+    content: attr(data-tooltip); 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 10px;  
+    border-radius: 5px;
+    white-space: nowrap; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+  }
+  
+  // Visa tooltipen när hover-effekten är aktiv
+  .MenuItem:hover::before {
+    opacity: 1; 
+  }
+  
+  // Stilar för bilder inuti menyobjekt
+  .MenuItem img {
     width: 100%;
-    background-color: #000;
-    transform-origin: right top;
-    transform: scale(0, 1);
-    transition: color 0.1s, transform 0.2s ease-out;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  // Stilar för "Lägg till i kundvagn"-knapp
+  .AddToBasket {
+    font-size: 20px;
+  }
+  
+  // Stilar för formuläret
+  form {
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(252, 207, 44, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  // Stilar för etiketter i formuläret
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  // Stilar för textarea i formuläret
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; // Möjliggör endast vertikal ändring av textarea
+  }
+  
+  // Stilar för skicka-knappen
+  .skicka {
+    background-color: lightgreen;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  // Stilar för omställningsknappen
+  .omstall {
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 80px;
+    cursor: pointer;
+  }
+  
+  // Hover-effekt för skicka-knappen
+  .skicka:hover {
+    background-color: green;
+  }
+  
+  // Hover-effekt för omställningsknappen
+  .omstall:hover {
+    background-color: darkred;
   }
 
-  &:active::before {
-    background-color: #000;
+// Stilar för logotyp
+.Logo {
+    width: 210px; 
+    height: 200px; 
+    background-image: url("v112_31.png");
+    background-size: cover;
+    opacity: 1; 
+    border-radius: 25px; 
+    margin-left: 100px; 
+    margin-top: 80px; 
   }
-
-  &:hover::before, &:focus::before {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-}
-
-.Grabber {
-  width: 418px;
-  height: 240px;
-  background-image: url("v2_110.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 500px;
-  left: 60px;
-  overflow: hidden;
-}
-
-.Big_Order {
-  width: 306px;
-  height: 77px;
-  background: rgba(255, 216, 79, 1);
-  opacity: 1;
-  position: absolute;
-  border-radius: 122px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0);
-  overflow: hidden;
-  top: 165px;
-  left: 0px;
-  cursor: pointer;
-}
-
-.Big_Order_Text {
-  width: 120px;
-  color: $text_color;
-  position: absolute;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: Bold;
-  font-size: 24px;
-  opacity: 1;
-  text-align: left;
-  top: 160px;
-  left: 93px;
-  cursor: pointer;
-}
-
-.Slogan_Long {
-  width: 306px;
-  color: $text_color;
-  position: absolute;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: Bold;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-  top: 100px;
-  left: 0px;
-}
-
-.Slogan {
-  width: 418px;
-  color: $text_color;
-  position: relative;
-  font-family: Playfair Display;
-  font-weight: Bold;
-  font-size: 50px;
-  opacity: 1;
-  text-align: left;
-  top: -55px;
-  left: 0px;
-}
-
-
-footer {
-  height: 150px;
-  background-color: rgba($color: #000000, $alpha: 0.8);
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  color: $text_color;
-  font-size: 20px;
-}
-
-@media (max-width: 350px) {
+  
+  // Stilar för navigeringsfältet
   .nav_bar {
-    flex-direction: column;
+    width: 100%; 
+    height: $nav_height; 
+    background-color: rgba($color: #000000, $alpha: 0.07);
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: right; 
   }
-}
+  
+  // Stilar för varje navigeringsobjekt
+  .Item {
+    display: flex; 
+    color: $text_color; 
+    font-size: 21px;  
+    margin-left: 50px; 
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  // Stilar för länkar (hover, focus, active)
+  a:hover, a:focus, a:active {
+    color: #e6dbdb; 
+    text-decoration: none;
+  }
+  
+  // Stilar för länkar som inte är logotypen
+  a:not(.Logo) {
+    position: relative; 
+    font-size: 20px; 
+    cursor: pointer; 
+    color: $text_color; 
+    text-align: center; 
+    padding: 15px 18px;
+  }
+  
+    &::before {
+      content: ''; // 
+      display: block; 
+      position: absolute;
+      bottom: 3px; 
+      left: 0; 
+      height: 3px;
+      width: 100%;
+      background-color: #000;
+      transform-origin: right top;
+      transform: scale(0, 1);
+      transition: color 0.1s, transform 0.2s ease-out;
+    }
+  
+    &:active::before {
+      background-color: #000; 
+    }
+  
+  /* Skapar en linje under länkar när användaren hovrar över dem */
+&:hover::before, &:focus::before {
+    transform-origin: left top; 
+    transform: scale(1, 1); 
+  }
+  
+  
+  .Grabber {
+    width: 418px;
+    height: 240px;
+    background-image: url("v2_110.png"); 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover; 
+    opacity: 1; 
+    position: absolute;
+    top: 500px;
+    left: 60px; 
+    overflow: hidden; 
+  }
+  
+  /* Stilmall för en grafisk knapp med rundad bakgrund och skugga */
+  .Big_Order {
+    width: 306px;
+    height: 77px;
+    background: rgba(255, 216, 79, 1);
+    opacity: 1; 
+    position: absolute; 
+    border-radius: 122px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0);
+    overflow: hidden; 
+    top: 165px;
+    left: 0px; 
+    cursor: pointer; 
+  }
+  
+  /* Stilmall för text inuti .Big_Order */
+  .Big_Order_Text {
+    width: 120px;
+    color: $text_color;
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: Bold; 
+    font-size: 24px;
+    opacity: 1; 
+    text-align: left; 
+    top: 160px; 
+    left: 93px; 
+    cursor: pointer; 
+  }
+  
+  /* Stilmall för en kort slogan med fet stil */
+  .Slogan_Long {
+    width: 306px;
+    color: $text_color; 
+    position: absolute; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: Bold; 
+    font-size: 16px; 
+    opacity: 1;
+    text-align: left;
+    top: 100px; 
+    left: 0px;
+  }
+  
+  /* Stilmall för en längre slogan med fet stil och en relativ position */
+  .Slogan {
+    width: 418px; 
+    color: $text_color; 
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: Bold;
+    font-size: 50px; 
+    opacity: 1; 
+    text-align: left; 
+    top: -55px; 
+    left: 0px; 
+  }
+  
+  /* Stilmall för footern med mörk bakgrund och vit text */
+  footer {
+    height: 150px; 
+    background-color: rgba($color: #000000, $alpha: 0.8); 
+    text-align: center; 
+    margin-top: 20px;
+    padding: 10px; 
+    color: $text_color;
+    font-size: 20px; 
+  }
+  
+  /* Media query för att justera layouten vid skärmstorlekar upp till 350px */
+  @media (max-width: 350px) {
+    .nav_bar {
+      flex-direction: column; 
+    }
+  }
