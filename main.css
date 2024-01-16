@@ -325,6 +325,7 @@ textarea {
   background-image: url("v112_31.png");
   background-size: cover;
   opacity: 1;
+  z-index: 1000;
   border-radius: 25px;
   margin-left: 100px;
   margin-top: 80px;
